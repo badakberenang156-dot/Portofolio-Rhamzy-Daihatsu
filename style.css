@@ -548,9 +548,19 @@ section {
         box-sizing: border-box;
     }
 
-    .site-footer { padding: 50px 20px 20px 20px; margin-top: 50px; border-top-left-radius: 30px; border-top-right-radius: 30px; }
+    .site-footer { 
+        padding: 40px 20px 25px 20px; /* Menyesuaikan jarak atas dan bawah */
+        margin-top: 40px; 
+        border-top-left-radius: 30px; 
+        border-top-right-radius: 30px; 
+    }
     .footer-logo { font-size: 2.2rem; }
-    .footer-content p { font-size: 0.9rem; }
+    .footer-content p { 
+        font-size: 0.95rem; 
+        line-height: 1.6; 
+        padding: 0 10px; /* Mencegah teks terlalu mepet dengan pinggiran layar HP */
+        margin-bottom: 25px;
+    }
 
     /* MODAL POPUP MOBILE FIX */
     .modal-content { 
