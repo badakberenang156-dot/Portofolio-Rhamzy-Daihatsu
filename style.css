@@ -11,13 +11,11 @@
     --dusty-rose-dark: #b87870;
 }
 
-html { scroll-behavior: smooth; }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+html, body { 
+    scroll-behavior: smooth; 
+    overflow-x: hidden; /* Ini kunci utamanya */
+    width: 100%;
+    position: relative;
 }
 
 body {
@@ -28,8 +26,6 @@ body {
     background-size: 30px 30px, auto;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed;
-    position: relative;
-    overflow-x: hidden; 
 }
 
 /* =========================================
@@ -108,6 +104,9 @@ body {
 .hero-title span { color: var(--daihatsu-red); text-shadow: none; }
 
 .hero-socials { display: flex; gap: 15px; margin-top: 10px; }
+#portofolio {
+    overflow: hidden;
+}
 .hero-socials a { 
     display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; 
     background-color: rgba(255,255,255,0.2); color: #fff; text-decoration: none; border-radius: 8px; 
