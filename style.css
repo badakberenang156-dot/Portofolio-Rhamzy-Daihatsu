@@ -20,12 +20,21 @@ html, body {
 
 body {
     background-color: var(--dusty-rose);
+}
+
+/* Memindahkan efek background ke layer virtual khusus agar tidak bug di HP */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
     background-image: 
         radial-gradient(rgba(107, 13, 13, 0.05) 2px, transparent 2px),
         linear-gradient(to bottom, #eabdb8 0%, #d69f98 25%, #bf8078 50%, #9e5b53 80%, #7a3a33 100%);
-    background-size: 30px 30px, auto;
+    background-size: 30px 30px, 100% 100%;
     background-repeat: repeat, no-repeat;
-    background-attachment: fixed;
+    z-index: -999;
+    pointer-events: none;
 }
 
 /* =========================================
